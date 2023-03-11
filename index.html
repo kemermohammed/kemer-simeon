@@ -14,6 +14,63 @@
         Thank you for taking the time to help us improve the platform
       </p>
     </div>
-    <div></div>
+    <div id="hero-card">
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" required pattern="" />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          required
+          placeholder="Enter your Email"
+          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        />
+        <label for="tel">Phone number</label>
+        <input
+          type="tel"
+          required
+          pattern="-\d{3}-\d{3}-\d{4}$"
+          placeholder="Enter your phone number"
+        />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="select current role" id="">
+          <option value="tech">choose role</option>
+          <option value="tech">Student</option>
+          <option value="tech">Full time programmer</option>
+          <option value="tech">Part time programmer</option>
+          <option value="tech">other</option>
+        </select>
+        <label for="recommend"
+          >Would you recommend freeCodeCamp to a friend?</label
+        >
+        <input type="radio" name="ok" id="#" value="Maybe" />
+        <label for="Maybe">Maybe</label>
+        <input type="radio" value="Definitely" />
+        <label for="Definitely">Definitely</label>
+        <input type="radio" value="not sure" />
+        <label for="not sure">Not sure</label>
+
+        <label for="improve"
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <input type="checkbox" name="first" id="front" />
+        <label for="first">Front-End Development</label>
+        <input type="checkbox" name="second" id="front" />
+        <label for="second">Backend Development</label>
+        <input type="checkbox" name="third" id="front" />
+        <label for="third">Git</label>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea
+          name="subjext"
+          id="write"
+          placeholder="Write something ......"
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
